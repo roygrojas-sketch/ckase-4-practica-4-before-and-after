@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+$fondo: #f4f1ea;
+$tinta: #2b2a26;
+$suave: #8a857a;
+$linea: #ddd7ca;
+$acento: #c0492f;
+$tarjeta: #fffdf8;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: $tinta;
+  color: $fondo;
+  padding: 0 24px;
+  height: 52px;
+  line-height: 52px;
+  z-index: 100;
+
+  &__logo {
+    display: inline-block;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $fondo;
+  }
+
+  &__links {
+    list-style: none;
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.9rem;
+      color: $fondo;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.15s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: $fondo;
+  color: $tinta;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  color: $suave;
+  margin-bottom: 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 1px solid $linea;
+}
+
+a {
+  display: block;
+  padding: 14px 8px;
+  text-decoration: none;
+  color: $tinta;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+}
+
+.leyenda {
+  background: $tinta;
+  color: $fondo;
+  padding: 14px 24px;
+  font-size: 0.8rem;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  b {
+    color: $acento;
+  }
+}
